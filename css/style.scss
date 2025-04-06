@@ -31,7 +31,11 @@ body {
 
   h1 {
     font-size: 1.2rem;
-    max-width: 95vw;
+    width: 95vw;
+
+    br {
+      display: none;
+    }
   }
 
   h2 {
@@ -230,6 +234,18 @@ footer {
 
 @media (max-width: 768px) {
   .wrapper {
+    header ul li a {
+      text-wrap: nowrap;
+    }
+    
+    .first-view-wrapper .first-view h1 {
+      font-size: 1rem;
+
+      br {
+        display: block;
+      }
+    }
+
     .self-introduction-wrapper {
       max-width: 95vw;
     }

@@ -29,7 +29,10 @@ body {
 }
 .wrapper h1 {
   font-size: 1.2rem;
-  max-width: 95vw;
+  width: 95vw;
+}
+.wrapper h1 br {
+  display: none;
 }
 .wrapper h2 {
   font-weight: 300;
@@ -187,6 +190,15 @@ footer p:nth-child(2) {
 }
 
 @media (max-width: 768px) {
+  .wrapper header ul li a {
+    text-wrap: nowrap;
+  }
+  .wrapper .first-view-wrapper .first-view h1 {
+    font-size: 1rem;
+  }
+  .wrapper .first-view-wrapper .first-view h1 br {
+    display: block;
+  }
   .wrapper .self-introduction-wrapper {
     max-width: 95vw;
   }
