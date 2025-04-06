@@ -1,0 +1,214 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #2D2A29;
+  background: #e0e7e8;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  font-family: "cormorant-unicase", sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+.wrapper h1, .wrapper h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+.wrapper h1, .wrapper h2, .wrapper h3 {
+  color: #2D2A29;
+}
+.wrapper h1 {
+  font-size: 1.2rem;
+  max-width: 95vw;
+}
+.wrapper h2 {
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+.wrapper h3 {
+  font-size: 16px;
+}
+.wrapper p, .wrapper ul {
+  text-align: left;
+}
+.wrapper header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+}
+.wrapper header ul {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding-top: 180px;
+  padding-right: 20px;
+}
+.wrapper header ul li {
+  list-style: none;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+}
+.wrapper header ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.wrapper header ul li a:hover {
+  color: #6a6969;
+}
+.wrapper .first-view-wrapper .first-view {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .first-view-wrapper .first-view img {
+  width: 100%;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+.wrapper .first-view-wrapper .first-view h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: lighter;
+  text-align: center;
+}
+.wrapper .first-view-wrapper p {
+  text-align: right;
+  margin-top: 4px;
+  margin-right: 8px;
+}
+.wrapper .first-view-wrapper p a {
+  color: #343434;
+}
+.wrapper .self-introduction-wrapper {
+  width: 800px;
+  max-width: 95vw;
+  margin: 0 auto;
+  padding: 0;
+}
+.wrapper .self-introduction-wrapper p {
+  color: #2D2A29;
+}
+.wrapper .self-introduction-wrapper .self-introduction-title {
+  margin-bottom: 1rem;
+}
+.wrapper .self-introduction-wrapper div {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.wrapper .blog-wrapper {
+  width: 994px;
+  max-width: 95vw;
+  margin: 0 auto;
+}
+.wrapper .blog-wrapper article:nth-of-type(1) .blog-post figure {
+  background-image: url("../img/image-03.jpg");
+}
+.wrapper .blog-wrapper article:nth-of-type(2) .blog-post figure {
+  background-image: url("../img/image-02.jpg");
+}
+.wrapper .blog-wrapper article:nth-of-type(3) .blog-post figure {
+  background-image: url("../img/image-01.jpg");
+}
+.wrapper .blog-wrapper .blog-post {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  font-family: "sans-serif";
+}
+.wrapper .blog-wrapper .blog-post figure {
+  width: 55.82822%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wrapper .blog-wrapper .blog-post li {
+  margin-left: 1em;
+}
+.wrapper .blog-wrapper .blog-post li::marker {
+  font-size: 0.5em;
+  color: #343434;
+}
+.wrapper .blog-wrapper .blog-post .blog-post-text {
+  width: 50%;
+  color: #808085;
+  font-size: 14px;
+}
+.wrapper .blog-wrapper .blog-post .blog-post-text time {
+  color: #2D2A29;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+  font-family: "cormorant-unicase", sans-serif;
+}
+.wrapper .blog-wrapper .blog-post.check-list li {
+  list-style: none;
+}
+.wrapper .blog-wrapper .blog-post.check-list li::before {
+  content: "✔";
+  color: #595959;
+  margin-right: 8px;
+}
+
+footer p {
+  text-align: center;
+}
+footer p:nth-child(2) {
+  font-family: "sans-serif";
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .wrapper .self-introduction-wrapper {
+    max-width: 95vw;
+  }
+  .wrapper .blog-wrapper {
+    max-width: 95vw;
+  }
+  .wrapper .blog-wrapper .blog-post {
+    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    font-family: "sans-serif";
+  }
+  .wrapper .blog-wrapper .blog-post .blog-post-text {
+    width: 100%;
+    color: #808085;
+    font-size: 14px;
+  }
+  .wrapper .blog-wrapper .blog-post figure {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}/*# sourceMappingURL=style.css.map */
