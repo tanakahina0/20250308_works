@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -32,6 +32,7 @@ body {
   h1 {
     font-size: 1.2rem;
     width: 95vw;
+    font-family: "Noto Sans JP", sans-serif;
 
     br {
       display: none;
@@ -47,6 +48,7 @@ body {
 
   h3 {
     font-size: 16px;
+    font-family: "Noto Sans JP", sans-serif;
   }
 
   p, ul {
@@ -134,10 +136,12 @@ body {
 
     p {
       color: #2D2A29;
+      font-family: "Noto Sans JP", sans-serif;
     }
 
     .self-introduction-title {
       margin-bottom: 1rem;
+      font-family: "Noto Sans JP", sans-serif;
     }
 
     div {
@@ -151,36 +155,22 @@ body {
     max-width: 95vw;
     margin: 0 auto;
 
-    article:nth-of-type(1) {
-      .blog-post figure {
-        background-image: url('../img/image-03.jpg');
-      }
-    }
-  
-    article:nth-of-type(2) {
-      .blog-post figure {
-        background-image: url('../img/image-02.jpg');
-      }
-    }
-  
-    article:nth-of-type(3) {
-      .blog-post figure {
-        background-image: url('../img/image-01.jpg');
-      }
-    }
-
     .blog-post {
       margin-bottom: 20px;
       padding-bottom: 20px;
       display: flex;
       column-gap: 50px;
-      font-family: 'sans-serif';
+      font-family: "Noto Sans JP", sans-serif;
 
       figure {
         width: 55.82822%;
         height: 300px;
-        background-size: cover;
-        background-repeat: no-repeat;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
   
       li {
@@ -196,6 +186,10 @@ body {
         width: 50%;
         color: #808085;
         font-size: 14px;
+
+        p {
+          font-family: "Noto Sans JP", sans-serif;
+        }
   
         time {
           color: #2D2A29;
@@ -222,13 +216,16 @@ body {
 }
 
 footer {
+  text-align: center;
+
   p {
     text-align: center;
+  }
 
-    &:nth-child(2) {
-      font-family: 'sans-serif';
-      margin-bottom: 1rem;
-    }
+  small {
+    display: block;
+    font-family: "Noto Sans JP", sans-serif;
+    margin-bottom: 1rem;
   }
 }
 
@@ -240,6 +237,7 @@ footer {
     
     .first-view-wrapper .first-view h1 {
       font-size: 1rem;
+      font-family: "Noto Sans JP", sans-serif;
 
       br {
         display: block;
@@ -258,7 +256,7 @@ footer {
         display: flex;
         flex-direction: column;
         row-gap: 25px;
-        font-family: "sans-serif";
+        font-family: "Noto Sans JP", sans-serif;
     
         .blog-post-text {
           width: 100%;
